@@ -1,6 +1,10 @@
 <script>
+import AppBlueMain from './AppBlueMain.vue'
 export default {
     name: "AppMain",
+    components: {
+        AppBlueMain
+    }
 }
 </script>
 <template lang="">
@@ -12,6 +16,7 @@ export default {
                 </h3>
             </div>
         </div>
+        <AppBlueMain />
     </main>
 </template>
 <style lang="scss" scoped>

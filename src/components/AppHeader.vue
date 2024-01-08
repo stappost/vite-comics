@@ -114,7 +114,8 @@ header {
             a {
                 text-decoration: none;
                 color: #000;
-
+                font-size: 13px;
+                text-transform: uppercase;
             }
 
             .active {
