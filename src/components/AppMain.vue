@@ -21,7 +21,7 @@ export default {
 </template>
 <style lang="scss" scoped>
 main {
-    margin: 20px 0;
+    margin-top: 20px;
 
     .bg_black {
         background-color: #000;
