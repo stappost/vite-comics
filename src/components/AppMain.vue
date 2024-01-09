@@ -102,7 +102,7 @@ export default {
 </template>
 <style lang="scss" scoped>
 main {
-    margin-top: 20px;
+
 
     .bg_black {
         background-color: #000;

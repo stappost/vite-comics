@@ -61,7 +61,7 @@ header {
             a {
                 text-decoration: none;
                 color: #000;
-                font-size: 13px;
+                font-size: 14px;
                 text-transform: uppercase;
                 padding-bottom: 50px;
                 font-weight: 600;

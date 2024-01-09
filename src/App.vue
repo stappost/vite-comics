@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import Jumbotron from './components/Jumbotron.vue';
 
 export default {
     data() {
@@ -62,6 +63,7 @@ export default {
     },
     components: {
         AppHeader,
+        Jumbotron,
         AppMain,
         AppFooter,
     }
@@ -70,6 +72,7 @@ export default {
 <template lang="">
     <div>
         <AppHeader :links="links"/>
+        <Jumbotron />
         <AppMain />
         <AppFooter :links="links"/>
     </div>
