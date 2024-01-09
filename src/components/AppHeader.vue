@@ -53,21 +53,30 @@ header {
         flex-wrap: wrap;
         list-style: none;
         align-items: center;
-        height: 100px;
+
 
         li {
-            padding: 10px;
+            padding: 50px 10px;
 
             a {
                 text-decoration: none;
                 color: #000;
                 font-size: 13px;
                 text-transform: uppercase;
+                padding-bottom: 50px;
+                font-weight: 600;
+
+                &:hover {
+                    color: $primary;
+                    border-bottom: 5px solid $primary;
+                }
             }
 
             .active {
                 color: $primary;
+                border-bottom: 5px solid $primary;
             }
+
         }
     }
 }

@@ -12,7 +12,7 @@ export default {
         <div class="bg_img">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div>
                             <h3 class="text_white">DC COMICS</h3>
                             <ul>
@@ -53,11 +53,6 @@ export default {
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="logo">
-                            <img src="../assets/img/dc-logo-bg.png" alt="logo">
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -95,15 +90,15 @@ export default {
 
 .bg_img {
     background-image: url('../assets/img/footer-bg.jpg');
-    padding: 20px 0;
 
     .text_white {
         color: #fff;
+        margin: 20px 0;
     }
 
     ul {
         list-style: none;
-        margin: 10px 0;
+        margin-bottom: 30px;
 
         li a {
             text-decoration: none;
@@ -111,18 +106,12 @@ export default {
         }
     }
 
-    .col-6 {
+    .col-12 {
         display: flex;
+        background-image: url('../assets/img/dc-logo-bg.png');
+        background-position: right;
+        background-repeat: no-repeat;
 
-        .logo {
-            position: relative;
-
-            img {
-                position: absolute;
-                top: -100px;
-
-            }
-        }
     }
 
 }
@@ -132,7 +121,7 @@ export default {
     padding: 10px 0;
 
     .row {
-        // justify-content: space-between;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -144,8 +133,6 @@ export default {
     }
 
     .text_right {
-        text-align: end;
-        vertical-align: middle;
 
         span {
             margin-right: 15px;
