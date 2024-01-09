@@ -1,5 +1,7 @@
 <script>
-import AppBlueMain from './AppBlueMain.vue'
+import AppBlueMain from './AppBlueMain.vue';
+import CardComics from './CardComics.vue';
+
 export default {
     name: "AppMain",
     data() {
@@ -81,7 +83,8 @@ export default {
         }
     },
     components: {
-        AppBlueMain
+        AppBlueMain,
+        CardComics
     }
 }
 </script>
@@ -89,9 +92,9 @@ export default {
     <main>
         <div class="bg_black">
             <div class="container">
-                <h3 class="text-white">
-                 --> Content goes here <--
-                </h3>
+                <div class="cards">
+                    <CardComics v-for="(comic, index) in comics" :key="index" :comic="comic"/>
+                </div>
             </div>
         </div>
         <AppBlueMain />
@@ -105,8 +108,9 @@ main {
         background-color: #000;
         padding: 50px;
 
-        .text-white {
-            color: #fff;
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 }
