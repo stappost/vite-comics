@@ -94,13 +94,17 @@ export default {
             <div class="container">
                 <div class="cards">
                     <CardComics v-for="(comic, index) in comics" :key="index" :comic="comic"/>
+                    <button>LOAD MORE</button>
                 </div>
+
             </div>
         </div>
         <AppBlueMain />
     </main>
 </template>
 <style lang="scss" scoped>
+@use '../styles/partials/variabiles' as *;
+
 main {
 
 
@@ -111,6 +115,15 @@ main {
         .cards {
             display: flex;
             flex-wrap: wrap;
+
+            button {
+                color: white;
+                background-color: $primary;
+                font-size: 15px;
+                font-weight: 600;
+                padding: 15px 50px;
+                margin: auto;
+            }
         }
     }
 }

@@ -16,11 +16,11 @@ export default {
 .card {
     width: calc(100% / 6 - 30px);
     margin: 15px;
-    // height: fit-content;
+
 
     img {
         width: 100%;
-        height: 80%;
+        height: 60%;
     }
 
     h4 {

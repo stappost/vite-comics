@@ -98,11 +98,17 @@ export default {
 
     ul {
         list-style: none;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        margin-right: 20px;
 
-        li a {
-            text-decoration: none;
-            color: grey;
+        li {
+            padding: 5px 0;
+
+            a {
+                text-decoration: none;
+                color: grey;
+
+            }
         }
     }
 
@@ -118,7 +124,7 @@ export default {
 
 .bg_grey {
     background-color: rgb(71, 71, 71);
-    padding: 10px 0;
+    padding: 20px 0;
 
     .row {
         justify-content: space-between;
